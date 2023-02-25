@@ -106,5 +106,4 @@ resource "aws_instance" "db_server" {
   tags = {
     "Name" = "${var.namespace}-db_server"
   }  
-
 }
