@@ -23,6 +23,7 @@ resource "aws_instance" "jumpbox" {
   }
 
   # Copies the ssh key file to home dir
+  // copies
   provisioner "file" {
     source      = "./${var.key_name}.pem"
     destination = "/home/ec2-user/${var.key_name}.pem"
