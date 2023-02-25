@@ -95,6 +95,7 @@ resource "aws_instance" "web_server2" {
 }
 
 // Configure database subnet
+// configure
 resource "aws_instance" "db_server" {
   ami                         = data.aws_ami.amazon-linux-2.id
   associate_public_ip_address = false
